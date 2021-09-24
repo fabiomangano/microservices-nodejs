@@ -1,0 +1,15 @@
+.btn {
+    padding: 5px 10px;
+    text-transform: uppercase;
+    background: #ffd900;
+    line-height: 30px;
+    color: #333d42;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #ffe600ef;
+    transition: background-color 0.2s ease-in-out;
+}

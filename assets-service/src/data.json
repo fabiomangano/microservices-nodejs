@@ -1,0 +1,90 @@
+[
+    {
+        "info": {
+           "title": "Informazioni generali",
+           "description": [
+              "• Il biglietto acquistato consente la visione del film scelto esclusivamente nel giorno e nell'orario indicato sopra.",
+              "• Il biglietto che è acquistato nei giorni precedente la data corrente non è utilizzabile, ne rimborsabile dell'importo ",
+              "• Tutti gli spettacoli sono preceduti da contenuti pubblicitari, adatti a tutti, di una durata variabile fino a 30 minuti.",
+              "• Seguirà quindi la proiezione del film, entro i 20 minuti successivi l'orario di proiezione comunicato sugli schermi.  ",
+              "• I biglietti sono acquistabili presso gli sportelli fino a 25 minuti prima dell'orario di proiezione e non oltre tale ora."
+           ]
+        },
+        "rooms": {
+           "title": "Il Cinema",
+           "description": [
+              "• Ogni sala è munita di posti per persone disabili, contatta il nostro personale di sala per maggiori informazioni."
+           ],
+           "details": [
+              {
+                 "sala": 1,
+                 "poltrone": 150,
+                 "disabili": 10,
+                 "totale": 160
+              },
+              {
+                 "sala": 2,
+                 "poltrone": 180,
+                 "disabili": 10,
+                 "totale": 180
+              },
+              {
+                 "sala": 3,
+                 "poltrone": 150,
+                 "disabili": 15,
+                 "totale": 175
+              },
+              {
+                 "sala": 4,
+                 "poltrone": 200,
+                 "disabili": 10,
+                 "totale": 200
+              },
+              {
+                 "sala": 5,
+                 "poltrone": 150,
+                 "disabili": 10,
+                 "totale": 160
+              }
+           ]
+        },
+        "prices": {
+           "title": "Prezzi e Fasce Orarie",
+           "description": [
+              "• Il biglietto acquistato consente la visione del film scelto entro e non oltre il giorno e l'orario indicato sullo stesso."
+           ],
+           "details": [
+              {
+                 "tipo": "standard",
+                 "giorno": "LUN - GIO",
+                 "orario": "TUTTO IL GIORNO",
+                 "prezzo": "10,00 €"
+              },
+              {
+                 "tipo": "weekend",
+                 "giorno": "VEN - DOM",
+                 "orario": "TUTTO IL GIORNO",
+                 "prezzo": "12,00 €"
+              },
+              {
+                 "tipo": "over 65",
+                 "giorno": "LUN - DOM",
+                 "orario": "TUTTO IL GIORNO",
+                 "prezzo": "8,00 €"
+              },
+              {
+                 "tipo": "under 9",
+                 "giorno": "LUN - DOM",
+                 "orario": "TUTTO IL GIORNO",
+                 "prezzo": "7,00 €"
+              },
+              {
+                 "tipo": "studenti",
+                 "giorno": "SAB",
+                 "orario": "TUTTO IL GIORNO",
+                 "prezzo": "8,50 €"
+              }
+           ]
+        }
+     }
+]

@@ -1,0 +1,1 @@
+{"assets-service":"http://assets-service:3002","movie-service":"http://movie-service:3003","auth-service":"http://auth-service:3004","ticket-service":"http://ticket-service:3007"}

@@ -1,0 +1,107 @@
+version: "3"
+services:
+  api-gateway:
+    container_name: api-gateway
+    build:
+      context: ./api-gateway
+      dockerfile: dockerfile
+    ports:
+      - 3001:3001
+    volumes:
+      - ./api-gateway:/app
+      - app/api-gateway/node_modules
+    depends_on:
+      - movie-service
+      - assets-service
+      - auth-service
+      - service-register
+      - email-service
+      - ticket-service
+      - trusted-ip-register
+
+  service-register:
+    container_name: service-register
+    build:
+      context: ./service-register
+      dockerfile: dockerfile
+    ports:
+      - 3005:3005
+    volumes:
+      - ./service-register:/app
+      - app/service-register/node_modules
+
+  auth-service:
+    container_name: auth-service
+    build:
+      context: ./auth-service
+      dockerfile: dockerfile
+    ports:
+      - 3004:3004
+    volumes:
+      - ./auth-service:/app
+      - app/auth-service/node_modules
+
+  movie-service:
+    container_name: movie-service
+    build:
+      context: ./movie-service
+      dockerfile: dockerfile
+    ports:
+      - 3003:3003
+    volumes:
+      - ./movie-service:/app
+      - app/movie-service/node_modules
+
+  assets-service:
+    container_name: assets-service
+    build:
+      context: ./assets-service
+      dockerfile: dockerfile
+    ports:
+      - 3002:3002
+    volumes:
+      - ./assets-service:/app
+      - app/assets-service/node_modules
+
+  trusted-ip-register:
+    container_name: trusted-ip-register
+    build:
+      context: ./trusted-ip-register
+      dockerfile: dockerfile
+    ports:
+      - 3006:3006
+    volumes:
+      - ./trusted-ip-register:/app
+      - app/trusted-ip-register/node_modules
+
+  ticket-service:
+    container_name: ticket-service
+    build:
+      context: ./ticket-service
+      dockerfile: dockerfile
+    ports:
+      - 3007:3007
+    volumes:
+      - ./ticket-service:/app
+      - app/ticket-service/node_modules
+
+  email-service:
+    container_name: email-service
+    build:
+      context: ./email-service
+      dockerfile: dockerfile
+    ports:
+      - 3008:3008
+    volumes:
+      - ./email-service:/app
+      - app/email-service/node_modules
+
+  app:
+    container_name: app
+    build:
+      context: ./app
+      dockerfile: dockerfile
+    ports:
+      - 8080:80
+    depends_on:
+      - api-gateway

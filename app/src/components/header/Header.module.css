@@ -1,0 +1,32 @@
+.header {
+  background-color: #00284e;
+  padding: 20px 20px;
+}
+
+.nav {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu li {
+  text-transform: uppercase;
+  display: inline-block;
+  list-style: none;
+  margin: 14px 7px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #87c3e6;
+}
+
+
+
+

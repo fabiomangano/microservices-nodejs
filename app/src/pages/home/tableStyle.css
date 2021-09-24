@@ -1,0 +1,30 @@
+.table-container {
+    text-align: center;
+     margin: 5px auto;
+}
+
+#title {
+    text-align: center;
+    font-family: arial, sans-serif;
+}
+
+#students {
+    margin: 0 auto;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 800px
+}
+
+#students td,
+#students th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: #06447b;
+}
+
+#students th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
